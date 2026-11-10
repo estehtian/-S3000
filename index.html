@@ -1,78 +1,956 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#10130f">
-  <meta name="description" content="SOMAY & ESTEH TIAN — comfort food bertemu rasa masa depan. Temukan menu favoritmu di S3000.">
-  <title>S3000 — Rasa Masa Depan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07151c" />
+  <meta name="description" content="SOMAY & ESTEH TIAN — Rasa lokal modern dengan sentuhan masa depan." />
+  <title>S3000 — SOMAY & ESTEH TIAN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    :root{--ink:#11140f;--paper:#f5f4ed;--lime:#d8ff62;--muted:#777a70;--line:rgba(17,20,15,.13);--display:'Space Grotesk',sans-serif;--body:'DM Sans',sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1200px,calc(100% - 64px));margin:auto}.topline{background:var(--ink);color:#e9ebdf;text-align:center;padding:10px 16px;font-size:11px;letter-spacing:.13em;text-transform:uppercase}.topline span{color:var(--lime)}.header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(245,244,237,.94);backdrop-filter:blur(16px);z-index:10}.header-inner{display:flex;align-items:center;justify-content:space-between;width:100%}.brand{display:flex;align-items:center;gap:11px;font-family:var(--display);font-weight:700;letter-spacing:-.06em;font-size:22px}.brand-mark{width:34px;height:34px;background:var(--ink);color:var(--lime);display:grid;place-items:center;border-radius:50%;font-size:14px;letter-spacing:-.08em}.nav{display:flex;gap:36px;font-size:13px;color:#53564d}.nav a:hover{color:#111}.header-actions{display:flex;align-items:center;gap:12px}.cart-button{height:42px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:transparent;display:flex;align-items:center;gap:10px;cursor:pointer;font-size:12px;font-weight:600}.cart-count{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--lime);font-size:11px}.menu-toggle{display:none;border:0;background:none;font-size:23px}.hero{padding:42px 0 70px}.hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:34px;align-items:stretch;min-height:520px}.hero-copy{padding:58px 0 34px;display:flex;flex-direction:column;align-items:flex-start}.eyebrow{display:flex;align-items:center;gap:9px;font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:700;color:#5a5d52}.live-dot{height:7px;width:7px;border-radius:50%;background:#a1c932;box-shadow:0 0 0 4px rgba(161,201,50,.17)}h1,h2,h3,p{margin-top:0}h1{font:500 clamp(54px,7vw,92px)/.94 var(--display);letter-spacing:-.085em;margin:28px 0 22px;max-width:680px}h1 em{font-style:normal;color:#829d32}.hero-copy>p{max-width:420px;color:#6b6e63;font-size:15px;line-height:1.8;margin-bottom:29px}.button-primary{height:52px;padding:0 21px;border:0;border-radius:4px;background:var(--ink);color:white;display:inline-flex;align-items:center;gap:22px;font-size:12px;font-weight:600;transition:transform .2s,background .2s;cursor:pointer}.button-primary:hover{background:#30352b;transform:translateY(-2px)}.button-primary .arrow{color:var(--lime);font-size:17px}.hero-meta{margin-top:auto;padding-top:34px;display:flex;gap:35px;color:#777a70;font-size:10px;letter-spacing:.08em;text-transform:uppercase}.hero-meta strong{color:var(--ink);font-weight:600}.hero-visual{position:relative;min-height:470px;border-radius:3px;overflow:hidden;background:#d3d0c3}.hero-visual:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.03) 40%,rgba(0,0,0,.55));z-index:1}.hero-visual img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.hero-badge{position:absolute;z-index:2;right:22px;top:22px;width:79px;height:79px;border-radius:50%;background:var(--lime);display:grid;place-items:center;text-align:center;font:700 11px/1.1 var(--display);transform:rotate(9deg)}.hero-caption{position:absolute;z-index:2;bottom:25px;left:28px;color:white}.hero-caption small{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:.76;margin-bottom:7px}.hero-caption strong{font:500 24px var(--display);letter-spacing:-.04em}.ticker{overflow:hidden;background:var(--lime);padding:16px 0}.ticker-track{white-space:nowrap;display:flex;justify-content:space-around;gap:30px;font:600 11px var(--display);letter-spacing:.16em;text-transform:uppercase}.ticker-track span{display:flex;align-items:center;gap:30px}.ticker-track span:after{content:'✳';font-size:16px}.section{padding:92px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px}.section-kicker{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#7a7d72;font-weight:700;margin-bottom:13px}.section h2{font:500 clamp(36px,5vw,57px)/1 var(--display);letter-spacing:-.075em;margin:0}.section-head p{color:#74776c;font-size:13px;line-height:1.7;max-width:300px;margin:0}.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.product-card{background:#eeede5;padding:12px;position:relative}.product-image{height:310px;position:relative;overflow:hidden;background:#dedbd0}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.product-card:hover .product-image img{transform:scale(1.04)}.tag{position:absolute;left:14px;top:14px;background:var(--paper);padding:8px 10px;font-size:9px;letter-spacing:.11em;text-transform:uppercase;font-weight:700}.product-info{display:flex;align-items:center;justify-content:space-between;padding:18px 5px 8px;gap:12px}.product-info h3{font:600 19px var(--display);letter-spacing:-.04em;margin:0 0 5px}.product-info p{font-size:11px;color:#777a70;margin:0}.product-price{font-size:13px;font-weight:700;white-space:nowrap}.add-button{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:transparent;font-size:19px;cursor:pointer;transition:all .2s}.add-button:hover{background:var(--lime);border-color:var(--lime)}.story{background:var(--ink);color:#f2f1e9;padding:76px 0}.story-grid{display:grid;grid-template-columns:.75fr 1.25fr;align-items:center;gap:70px}.story-number{color:var(--lime);font:500 100px/.8 var(--display);letter-spacing:-.1em}.story-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#a1a398;margin-top:18px}.story h2{font:500 clamp(36px,5vw,58px)/1.02 var(--display);letter-spacing:-.07em;margin-bottom:18px}.story h2 span{color:var(--lime)}.story-copy p{color:#a6a99d;line-height:1.8;font-size:14px;max-width:500px;margin-bottom:24px}.text-link{font-size:12px;border-bottom:1px solid var(--lime);padding-bottom:7px;color:var(--lime)}.visit{padding:74px 0}.visit-box{border:1px solid var(--line);padding:35px 40px;display:flex;justify-content:space-between;align-items:center;gap:24px}.visit-box h2{font:500 31px var(--display);letter-spacing:-.06em;margin:0 0 8px}.visit-box p{color:#777a70;font-size:13px;margin:0}.visit-box .button-primary{white-space:nowrap}.footer{border-top:1px solid var(--line);padding:25px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;color:#777a70;font-size:11px}.footer .brand{color:var(--ink);font-size:17px}.footer .brand-mark{width:28px;height:28px;font-size:11px}.social{display:flex;gap:20px}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:white;padding:13px 18px;font-size:12px;z-index:20;opacity:0;pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
-    @media(max-width:760px){.wrap{width:min(100% - 36px,560px)}.topline{font-size:9px}.header{height:68px}.nav{display:none;position:absolute;top:67px;left:0;right:0;background:var(--paper);padding:22px 24px 26px;flex-direction:column;gap:20px;border-bottom:1px solid var(--line)}.nav.open{display:flex}.menu-toggle{display:block}.header-actions{gap:4px}.cart-button{height:38px;padding:0 10px}.hero{padding:24px 0 45px}.hero-grid{grid-template-columns:1fr;gap:23px;min-height:auto}.hero-copy{padding:35px 0 10px}.hero h1{font-size:clamp(57px,15vw,82px);margin:23px 0 17px}.hero-copy>p{font-size:14px}.hero-meta{margin-top:24px;padding-top:20px;gap:20px}.hero-visual{min-height:390px}.ticker-track{justify-content:flex-start;animation:marquee 22s linear infinite;width:max-content}.ticker-track span{padding-left:12px}@keyframes marquee{to{transform:translateX(-35%)}}.section{padding:65px 0}.section-head{align-items:flex-start;flex-direction:column;margin-bottom:23px}.section-head p{max-width:100%}.products{gap:12px}.product-card{padding:8px}.product-image{height:clamp(160px,48vw,260px)}.product-info{align-items:flex-start;padding:13px 2px 6px;flex-wrap:wrap}.product-info h3{font-size:16px}.product-info p{font-size:10px}.product-price{font-size:12px}.add-button{width:32px;height:32px}.story{padding:56px 0}.story-grid{grid-template-columns:1fr;gap:34px}.story-number{font-size:78px}.story h2{font-size:42px}.visit{padding:48px 0}.visit-box{padding:25px 21px;align-items:flex-start;flex-direction:column}.visit-box h2{font-size:27px}.footer-inner{flex-wrap:wrap}.social{gap:13px}.footer-inner>span{width:100%;order:3}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+    :root{
+      --bg-1:#020d14;
+      --bg-2:#07131a;
+      --panel:#081922;
+      --panel-2:#0d2331;
+      --line:rgba(117,238,255,.5);
+      --cyan:#5ee7ff;
+      --cyan-2:#8ae2ff;
+      --lime:#d8ff62;
+      --white:#f4f5ef;
+      --muted:#c9d3db;
+      --steel:#dce4ea;
+      --shadow:rgba(0,0,0,.45);
+      --glass:rgba(13,28,39,.5);
+      --orange:#ff8f4b;
+      --deep:#103247;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior:smooth; }
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:"DM Sans",sans-serif;
+      background:
+        radial-gradient(circle at 10% 15%, rgba(19,123,182,.35), transparent 22%),
+        radial-gradient(circle at 82% 14%, rgba(98,216,255,.18), transparent 25%),
+        linear-gradient(180deg, #07141b 0%, #020b12 100%);
+      color:var(--white);
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background:
+        linear-gradient(90deg, rgba(94,231,255,.06), transparent 35%, transparent 65%, rgba(94,231,255,.06)),
+        repeating-linear-gradient(
+          90deg,
+          rgba(255,255,255,.02),
+          rgba(255,255,255,.02) 1px,
+          transparent 1px,
+          transparent 4px
+        );
+      pointer-events:none;
+      mix-blend-mode:screen;
+    }
+
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; display:block; }
+
+    .page-shell{
+      position:relative;
+      width:min(1500px, calc(100% - 40px));
+      margin:0 auto;
+      padding:26px 0 36px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      color:#dfeaf0;
+      font-size:13px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      opacity:.8;
+      margin-bottom:22px;
+      padding-left:12px;
+      padding-right:12px;
+    }
+
+    .topbar .small-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+    }
+
+    .topbar .small-tag::before{
+      content:"";
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:var(--lime);
+      box-shadow:0 0 14px rgba(216,255,98,.9);
+    }
+
+    .landing{
+      position:relative;
+      background:
+        linear-gradient(180deg, rgba(5,16,22,.25), rgba(7,18,24,.55)),
+        rgba(7,17,22,.2);
+      border:1px solid rgba(125,223,255,.18);
+      box-shadow:0 0 30px rgba(0,0,0,.28), inset 0 0 18px rgba(121,238,255,.04);
+      padding:24px 40px 30px;
+      overflow:hidden;
+    }
+
+    .landing::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(94,231,255,.12), transparent 35%),
+        radial-gradient(circle at 90% 20%, rgba(94,231,255,.12), transparent 25%);
+      pointer-events:none;
+    }
+
+    .nav{
+      position:relative;
+      z-index:2;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:8px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-family:"Space Grotesk",sans-serif;
+      font-weight:700;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      color:var(--white);
+    }
+
+    .brand-mark{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      background:linear-gradient(135deg, #101d2a, #0b3347);
+      border:2px solid rgba(92,228,255,.8);
+      box-shadow:0 0 18px rgba(92,228,255,.8), inset 0 0 20px rgba(182,245,255,.16);
+      font-size:14px;
+      color:var(--cyan-2);
+    }
+
+    .brand-text{
+      font-size:30px;
+      font-weight:800;
+      letter-spacing:-.05em;
+      text-shadow:0 0 18px rgba(115,232,255,.2);
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:26px;
+      color:#dceaf0;
+      font-size:15px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      opacity:.9;
+    }
+
+    .nav-links a{
+      position:relative;
+      padding:8px 0;
+    }
+
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:2px;
+      background:linear-gradient(90deg, transparent, var(--cyan), transparent);
+      transform:scaleX(0);
+      transform-origin:center;
+      transition:.25s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a:focus-visible::after{
+      transform:scaleX(1);
+    }
+
+    .hero{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns: 1.45fr 0.9fr;
+      gap:30px;
+      min-height:760px;
+      padding-top:22px;
+    }
+
+    .hero-left{
+      position:relative;
+      padding-top:12px;
+    }
+
+    .mega-title{
+      position:relative;
+      margin:0;
+      font-family:"Space Grotesk",sans-serif;
+      font-weight:800;
+      letter-spacing:-.065em;
+      line-height:.78;
+      text-transform:uppercase;
+      font-size:clamp(5.7rem, 8vw, 14rem);
+      color:rgba(255,255,255,.94);
+      text-shadow:
+        0 0 0 rgba(255,255,255,.92),
+        0 0 28px rgba(123,233,255,.28),
+        0 0 55px rgba(123,233,255,.4);
+      text-stroke: 1px rgba(255,255,255,.8);
+      -webkit-text-stroke: 1px rgba(255,255,255,.8);
+    }
+
+    .mega-title span{
+      display:block;
+      position:relative;
+      color:transparent;
+      background:linear-gradient(180deg, rgba(255,255,255,.9) 0%, rgba(236,240,245,.8) 25%, rgba(114,120,127,.7) 100%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      letter-spacing:-.05em;
+      text-shadow:
+        0 10px 16px rgba(0,0,0,.2),
+        0 0 30px rgba(113,228,255,.45);
+    }
+
+    .mega-title .inner{
+      display:block;
+      margin-top:14px;
+      color:rgba(255,255,255,.78);
+      font-size:clamp(2.1rem, 3vw, 4.1rem);
+      letter-spacing:-.04em;
+      text-transform:none;
+      font-weight:700;
+      font-family:"Space Grotesk",sans-serif;
+      text-shadow:
+        0 0 17px rgba(127,234,255,.2),
+        0 0 10px rgba(255,255,255,.2);
+    }
+
+    .tagline{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-top:20px;
+      margin-bottom:28px;
+      padding-left:8px;
+      font-size:clamp(1.1rem, 1.2vw, 1.7rem);
+      letter-spacing:-.03em;
+      font-family:"Space Grotesk",sans-serif;
+      font-weight:700;
+      color:#e8f5ff;
+      text-shadow:0 0 14px rgba(94,231,255,.18);
+    }
+
+    .tagline .dot{
+      width:14px;
+      height:14px;
+      border-radius:50%;
+      background:var(--lime);
+      box-shadow:0 0 18px rgba(216,255,98,.9);
+    }
+
+    .cta-wrap{
+      display:flex;
+      align-items:center;
+      gap:22px;
+      margin-top:14px;
+      margin-bottom:42px;
+      position:relative;
+      z-index:2;
+    }
+
+    .cta-copy{
+      flex:1;
+      max-width:520px;
+      font-family:"Space Grotesk",sans-serif;
+      font-size:clamp(1.1rem, 1.4vw, 2.2rem);
+      line-height:1.15;
+      letter-spacing:-.04em;
+      font-weight:700;
+      color:#edf9ff;
+      text-shadow:0 0 16px rgba(115,232,255,.18);
+    }
+
+    .cta-arrow{
+      width:84px;
+      height:64px;
+      position:relative;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(23,74,91,.9), rgba(5,23,31,.36));
+      border:2px solid rgba(113,232,255,.8);
+      box-shadow:0 0 18px rgba(113,232,255,.55), inset 0 0 14px rgba(255,255,255,.06);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .cta-arrow::before{
+      content:"";
+      position:absolute;
+      inset:6px 8px;
+      border:2px solid rgba(82,208,255,.6);
+      border-radius:14px;
+      background:rgba(11,23,30,.18);
+    }
+
+    .cta-arrow::after{
+      content:"";
+      position:absolute;
+      width:18px;
+      height:18px;
+      border-top:3px solid var(--cyan-2);
+      border-right:3px solid var(--cyan-2);
+      transform:rotate(45deg);
+      margin-left:8px;
+    }
+
+    .scene{
+      position:relative;
+      min-height:620px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      padding-top:30px;
+    }
+
+    .scene .glow-ring{
+      position:absolute;
+      width:560px;
+      height:560px;
+      bottom:-30px;
+      right:14%;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(31,233,255,.22), rgba(6,33,41,.06) 52%, transparent 72%);
+      filter:blur(12px);
+      pointer-events:none;
+    }
+
+    .drink-box{
+      position:absolute;
+      right:34px;
+      top:42px;
+      width:430px;
+      height:500px;
+      z-index:2;
+      filter:drop-shadow(0 22px 28px rgba(0,0,0,.36));
+    }
+
+    .drink{
+      position:absolute;
+      right:8px;
+      top:0;
+      width:360px;
+      height:440px;
+      border-radius:20px 20px 28px 28px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.04) 20%, rgba(21,40,46,.2) 100%),
+        linear-gradient(180deg, #c86f3b, #b35428 20%, #7d3218 54%, #5d1b0a 100%);
+      border:10px solid rgba(255,255,255,.4);
+      box-shadow: inset 0 0 30px rgba(255,255,255,.1), inset 0 -18px 45px rgba(0,0,0,.16);
+      overflow:hidden;
+      transform:rotate(6deg);
+    }
+
+    .drink::before{
+      content:"";
+      position:absolute;
+      inset:0 0 auto 0;
+      height:60%;
+      background:linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.08) 20%, transparent 44%);
+    }
+
+    .drink::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 18% 22%, rgba(255,255,255,.38), transparent 25%);
+      pointer-events:none;
+    }
+
+    .cup-top{
+      position:absolute;
+      left:20px;
+      right:20px;
+      top:0;
+      height:64px;
+      border-radius:18px 18px 8px 8px;
+      background:linear-gradient(180deg, rgba(255,255,255,.94), rgba(232,236,236,.83));
+      box-shadow:0 16px 25px rgba(255,255,255,.2);
+      z-index:4;
+    }
+
+    .cup-top::before{
+      content:"";
+      position:absolute;
+      inset:6px 14px 2px;
+      border-radius:16px 16px 8px 8px;
+      background:linear-gradient(180deg, rgba(255,255,255,.72), rgba(199,211,217,.68));
+      border:1px solid rgba(255,255,255,.5);
+    }
+
+    .drink-ice{
+      position:absolute;
+      left:18px;
+      right:18px;
+      top:52px;
+      height:16px;
+      z-index:3;
+    }
+
+    .drink-ice span{
+      position:absolute;
+      width:30px;
+      height:30px;
+      border-radius:8px;
+      background:linear-gradient(180deg, rgba(255,255,255,.96), rgba(199,228,250,.8));
+      transform: rotate(18deg);
+      box-shadow:inset 0 0 14px rgba(255,255,255,.7), 0 0 10px rgba(255,255,255,.3);
+      opacity:.95;
+    }
+
+    .drink-ice span:nth-child(1){ left:24px; top:0; }
+    .drink-ice span:nth-child(2){ left:102px; top:2px; }
+    .drink-ice span:nth-child(3){ left:170px; top:-2px; }
+    .drink-ice span:nth-child(4){ left:238px; top:0; }
+    .drink-ice span:nth-child(5){ left:284px; top:4px; }
+
+    .drink-label{
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      top:82px;
+      z-index:3;
+      text-align:center;
+      color:#f6f8ff;
+      font-family:"Space Grotesk",sans-serif;
+      font-weight:700;
+      letter-spacing:-.05em;
+      text-shadow:0 0 18px rgba(255,255,255,.18);
+    }
+
+    .drink-label strong{
+      display:block;
+      font-size:36px;
+      line-height:1;
+      text-transform:uppercase;
+    }
+
+    .drink-label small{
+      display:block;
+      margin-top:6px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      opacity:.85;
+    }
+
+    .drink-pour{
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:210px;
+      background:linear-gradient(180deg, rgba(228,114,69,.2), rgba(118,54,17,.7));
+      border-top:3px solid rgba(255,255,255,.12);
+      box-shadow: inset 0 18px 44px rgba(244,136,72,.18);
+    }
+
+    .drink-pour::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(255,255,255,.14), rgba(162,77,29,.18));
+    }
+
+    .drink-straw{
+      position:absolute;
+      right:-16px;
+      top:42px;
+      width:18px;
+      height:220px;
+      background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(189,194,197,.78));
+      border-radius:12px 12px 6px 6px;
+      transform:rotate(8deg);
+      box-shadow:0 0 10px rgba(255,255,255,.22);
+    }
+
+    .drink-straw::before{
+      content:"";
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      width:42px;
+      height:18px;
+      border-radius:50%;
+      background:linear-gradient(180deg, rgba(255,255,255,.8), rgba(206,210,208,.6));
+      top:-8px;
+      box-shadow:0 0 14px rgba(255,255,255,.1);
+    }
+
+    .drink-shadow{
+      position:absolute;
+      inset:auto 0 12px 0;
+      height:18px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(0,0,0,.52), transparent 60%);
+      filter:blur(8px);
+      transform:translateY(12px);
+    }
+
+    .food-plate{
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:8px;
+      width:min(780px, 100%);
+      height:530px;
+      z-index:1;
+    }
+
+    .food-plate .plate{
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:18px;
+      width:760px;
+      height:410px;
+      border-radius:50%;
+      background:
+        radial-gradient(circle at 30% 24%, rgba(255,255,255,.25), transparent 18%),
+        linear-gradient(180deg, #12181a 0%, #090d0f 43%, #080b0d 100%);
+      border:4px solid rgba(117,238,255,.9);
+      box-shadow:
+        0 0 18px rgba(117,238,255,.45),
+        inset 0 0 18px rgba(255,255,255,.05),
+        0 30px 45px rgba(0,0,0,.42);
+    }
+
+    .food-plate .plate::before{
+      content:"";
+      position:absolute;
+      inset:18px 20px 18px 20px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.08), transparent 52%);
+      border:1px solid rgba(108,196,255,.18);
+      z-index:0;
+    }
+
+    .food-plate .food-img{
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:44px;
+      width:710px;
+      height:340px;
+      border-radius:50%;
+      object-fit:cover;
+      filter:drop-shadow(0 10px 25px rgba(0,0,0,.32));
+      border:4px solid rgba(104,219,255,.38);
+    }
+
+    .plate-badge{
+      position:absolute;
+      left:20px;
+      bottom:24px;
+      z-index:3;
+      padding:18px 26px;
+      border-radius:24px;
+      background:linear-gradient(180deg, rgba(13,22,29,.8), rgba(7,13,18,.9));
+      border:2px solid rgba(102,216,255,.82);
+      box-shadow:0 0 28px rgba(90,222,255,.45);
+      font-family:"Space Grotesk",sans-serif;
+      min-width:270px;
+    }
+
+    .plate-badge h3{
+      margin:0 0 12px;
+      font-size:34px;
+      line-height:1;
+      letter-spacing:-.06em;
+      text-transform:uppercase;
+      color:var(--white);
+      text-shadow:0 0 15px rgba(95,233,255,.26);
+    }
+
+    .plate-badge ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:11px;
+      color:#ebf6ff;
+      font-size:18px;
+      line-height:1.3;
+    }
+
+    .plate-badge li{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+    }
+
+    .plate-badge li::before{
+      content:"✓";
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:20px;
+      height:20px;
+      border-radius:50%;
+      min-width:20px;
+      margin-top:2px;
+      background:linear-gradient(180deg, var(--cyan), #1ec5c8);
+      color:#06161e;
+      font-weight:900;
+      box-shadow:0 0 14px rgba(74,219,255,.7);
+    }
+
+    .feature-column{
+      position:absolute;
+      right:24px;
+      top:195px;
+      display:grid;
+      gap:18px;
+      z-index:4;
+    }
+
+    .feature-item{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-height:64px;
+      color:#edf8ff;
+      font-family:"Space Grotesk",sans-serif;
+      letter-spacing:-.04em;
+      font-weight:700;
+    }
+
+    .feature-icon{
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(180deg, rgba(19,44,57,.82), rgba(12,35,46,.7));
+      border:2px solid rgba(102,216,255,.7);
+      box-shadow:0 0 18px rgba(99,223,255,.35);
+      color:var(--cyan);
+      font-size:20px;
+    }
+
+    .feature-text{
+      font-size:1.05rem;
+      line-height:1.1;
+      text-align:left;
+      max-width:150px;
+    }
+
+    .feature-text strong{
+      display:block;
+      font-size:1.32rem;
+      line-height:1.1;
+      color:#f7ffff;
+    }
+
+    .bottom-strip{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap:22px;
+      margin-top:18px;
+      padding:18px 12px 0;
+      border-top:1px solid rgba(119,227,255,.18);
+    }
+
+    .bottom-item{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:14px;
+      color:#eafaff;
+      font-family:"Space Grotesk",sans-serif;
+      font-weight:700;
+      letter-spacing:-.03em;
+      text-transform:capitalize;
+      text-align:center;
+      min-height:74px;
+    }
+
+    .bottom-item .mini-icon{
+      width:52px;
+      height:52px;
+      border-radius:50%;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(180deg, rgba(12,54,70,.52), rgba(11,29,36,.74));
+      border:2px solid rgba(117,238,255,.6);
+      box-shadow:0 0 14px rgba(117,238,255,.25);
+      font-size:18px;
+      color:var(--cyan);
+    }
+
+    .bottom-item span{
+      font-size:18px;
+      line-height:1.1;
+    }
+
+    .bottom-item strong{
+      display:block;
+      font-size:22px;
+      line-height:1.05;
+      letter-spacing:-.04em;
+    }
+
+    @media (max-width: 1100px){
+      .landing{
+        padding-left:22px;
+        padding-right:22px;
+      }
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .scene{
+        min-height:620px;
+      }
+      .feature-column{
+        right:10px;
+        top:170px;
+      }
+    }
+
+    @media (max-width: 760px){
+      .page-shell{
+        width:min(100% - 22px, 1200px);
+      }
+      .landing{
+        padding:18px 14px 22px;
+      }
+      .topbar{
+        padding:0;
+        font-size:10px;
+        letter-spacing:.08em;
+      }
+      .brand-text{
+        font-size:22px;
+      }
+      .nav-links{
+        display:none;
+      }
+      .mega-title{
+        font-size:4.2rem;
+      }
+      .hero{
+        min-height:auto;
+      }
+      .cta-wrap{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .cta-copy{
+        max-width:100%;
+      }
+      .cta-arrow{
+        width:72px;
+        height:58px;
+      }
+      .scene{
+        min-height:520px;
+      }
+      .drink-box{
+        position:relative;
+        left:auto;
+        right:auto;
+        top:auto;
+        width:100%;
+        max-width:350px;
+        margin:0 auto 20px;
+      }
+      .food-plate{
+        position:relative;
+        left:auto;
+        transform:none;
+        width:100%;
+        max-width:620px;
+        margin:0 auto;
+        height:auto;
+      }
+      .plate-badge{
+        position:relative;
+        left:auto;
+        bottom:auto;
+        margin-top:12px;
+      }
+      .feature-column{
+        position:relative;
+        top:auto;
+        right:auto;
+        display:grid;
+        grid-template-columns:repeat(2, minmax(0,1fr));
+        gap:12px;
+        margin-top:12px;
+      }
+      .bottom-strip{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="topline"><span>Selamat datang di masa depan</span> — comfort food, energi baru</div>
-  <header class="header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#home" aria-label="S3000 beranda"><span class="brand-mark">S3</span><span>S3000</span></a>
-      <nav class="nav" id="site-nav" aria-label="Navigasi utama"><a href="#home">Beranda</a><a href="#menu">Menu</a><a href="#cerita">Cerita kami</a><a href="#kunjungi">Temukan kami</a></nav>
-      <div class="header-actions"><button class="cart-button" type="button" aria-label="Keranjang belanja">Keranjang <span class="cart-count" id="cart-count">0</span></button><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">☰</button></div>
+  <div class="page-shell">
+    <div class="topbar">
+      <div class="small-tag">Selamat datang di masa depan</div>
+      <div>Comfort food • energi baru</div>
     </div>
-  </header>
-  <main>
-    <section class="hero wrap" id="home">
-      <div class="hero-grid">
-        <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> SOMAY & ESTEH TIAN · EST. 2025</div><h1>Rasa lokal.<br><em>Energi baru.</em></h1><p>Teman baik untuk hari yang sibuk. Somay hangat dan es teh segar, disajikan dengan cara yang lebih seru.</p><a class="button-primary" href="#menu">Jelajahi menu <span class="arrow">↗</span></a><div class="hero-meta"><span><strong>01</strong> · Dibuat segar</span><span><strong>02</strong> · Rasa yang akrab</span></div></div>
-        <div class="hero-visual"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="Hidangan segar penuh warna untuk dinikmati bersama" fetchpriority="high"><div class="hero-badge">GOOD<br>MOOD<br>ONLY ✳</div><div class="hero-caption"><small>Yang enak, tanpa banyak alasan</small><strong>Temukan favoritmu.</strong></div></div>
-      </div>
-    </section>
-    <div class="ticker" aria-label="Somay dan es teh, perpaduan favorit"><div class="ticker-track"><span>Somay hangat</span><span>Es teh segar</span><span>Rasa lokal</span><span>Hari jadi cerah</span><span>Somay hangat</span><span>Es teh segar</span></div></div>
-    <section class="section wrap" id="menu">
-      <div class="section-head"><div><div class="section-kicker">Menu pilihan · 01—02</div><h2>Favorit hari ini.</h2></div><p>Dibuat untuk menemani jeda, obrolan, dan semua momen kecil yang terasa spesial.</p></div>
-      <div class="products">
-        <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1000&q=85" alt="Hidangan siomay hangat untuk menu somay komplit" loading="lazy"><span class="tag">Paling dicari</span></div><div class="product-info"><div><h3>Somay Komplit</h3><p>Hangat, gurih, bikin nyaman.</p></div><span class="product-price">Rp15.000</span><button class="add-button" type="button" data-product="Somay Komplit" aria-label="Tambah Somay Komplit ke keranjang">+</button></div></article>
-        <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=1000&q=85" alt="Es teh segar dalam gelas dengan es batu" loading="lazy"><span class="tag">Segarnya pas</span></div><div class="product-info"><div><h3>Esteh Original Jumbo</h3><p>Teh klasik, ukuran ekstra.</p></div><span class="product-price">Rp10.000</span><button class="add-button" type="button" data-product="Esteh Original Jumbo" aria-label="Tambah Esteh Original Jumbo ke keranjang">+</button></div></article>
-      </div>
-    </section>
-    <section class="story" id="cerita"><div class="wrap story-grid"><div><div class="story-number">S³</div><div class="story-label">SOMAY & ESTEH TIAN · S3000</div></div><div class="story-copy"><div class="section-kicker" style="color:#a6a99d">Lebih dari sekadar makan</div><h2>Rasa yang akrab.<br><span>Semangat yang baru.</span></h2><p>Kami percaya hal sederhana bisa bikin hari terasa lebih baik. S3000 membawa dua favorit sehari-hari—somay dan es teh—dengan suasana yang segar, ramah, dan selalu siap menemani.</p><a class="text-link" href="#menu">Kenali menu kami ↗</a></div></div></section>
-    <section class="visit wrap" id="kunjungi"><div class="visit-box"><div><div class="section-kicker">Sampai jumpa di S3000</div><h2>Jeda enak dimulai di sini.</h2><p>Somay hangat atau es teh segar? Pilihanmu sudah menunggu.</p></div><a class="button-primary" href="#menu">Pilih favoritmu <span class="arrow">↗</span></a></div></section>
-  </main>
-  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">S3</span><span>S3000</span></a><span>© 2025 SOMAY & ESTEH TIAN. Dibuat dengan rasa.</span><div class="social"><a href="#menu">Menu</a><a href="#cerita">Tentang</a><a href="#kunjungi">Kontak</a></div></div></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script>
-    const count = document.getElementById('cart-count');
-    const toast = document.getElementById('toast');
-    let cartCount = 0;
-    let toastTimer;
-    document.querySelectorAll('.add-button').forEach((button) => {
-      button.addEventListener('click', () => {
-        cartCount += 1;
-        count.textContent = cartCount;
-        toast.textContent = `${button.dataset.product} ditambahkan ke keranjang`;
-        toast.classList.add('show');
-        clearTimeout(toastTimer);
-        toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
-      });
-    });
-    const menuToggle = document.getElementById('menu-toggle');
-    const siteNav = document.getElementById('site-nav');
-    menuToggle.addEventListener('click', () => {
-      const isOpen = siteNav.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-      menuToggle.setAttribute('aria-label', isOpen ? 'Tutup menu navigasi' : 'Buka menu navigasi');
-      menuToggle.textContent = isOpen ? '×' : '☰';
-    });
-    siteNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-      siteNav.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'Buka menu navigasi');
-      menuToggle.textContent = '☰';
-    }));
-  </script>
+
+    <div class="landing">
+      <nav class="nav" aria-label="Navigasi utama">
+        <div class="brand" aria-label="S3000 brand">
+          <span class="brand-mark">S3</span>
+          <span class="brand-text">S3000</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="#home">Beranda</a>
+          <a href="#menu">Menu</a>
+          <a href="#story">Cerita</a>
+          <a href="#visit">Temukan kami</a>
+        </div>
+      </nav>
+
+      <main class="hero" id="home">
+        <section class="hero-left">
+          <h1 class="mega-title">
+            <span>SOMAY</span>
+            <span class="inner">Lezat • Sehat • Modern</span>
+          </h1>
+
+          <div class="tagline">
+            <span class="dot"></span>
+            <span>SOMAY &amp; ESTEH TIAN · EST. 2025</span>
+          </div>
+
+          <div class="cta-wrap">
+            <div class="cta-copy">Cita Rasa Tradisional dengan Sentuhan Masa Depan</div>
+            <div class="cta-arrow" aria-hidden="true"></div>
+          </div>
+
+          <div class="bottom-strip">
+            <div class="bottom-item">
+              <div class="mini-icon">⚡</div>
+              <div><span>Praktis</span><strong>&amp; Cepat</strong></div>
+            </div>
+            <div class="bottom-item">
+              <div class="mini-icon">😊</div>
+              <div><span>Enak</span><strong>Banget</strong></div>
+            </div>
+            <div class="bottom-item">
+              <div class="mini-icon">⭐</div>
+              <div><span>Favorit</span><strong>Semua</strong></div>
+            </div>
+            <div class="bottom-item">
+              <div class="mini-icon">🍴</div>
+              <div><span>Rasa</span><strong>Asli</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="scene" aria-label="Produk utama">
+          <div class="glow-ring"></div>
+
+          <div class="drink-box">
+            <div class="drink">
+              <div class="cup-top"></div>
+              <div class="drink-ice">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="drink-label">
+                <strong>CUPTEA</strong>
+                <small>by Esteh Tian Group</small>
+              </div>
+              <div class="drink-pour"></div>
+            </div>
+            <div class="drink-straw"></div>
+            <div class="drink-shadow"></div>
+          </div>
+
+          <div class="feature-column">
+            <div class="feature-item">
+              <div class="feature-icon">🌿</div>
+              <div class="feature-text"><strong>Bahan</strong> Berkualitas</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">💚</div>
+              <div class="feature-text"><strong>Rendah</strong> Kolesterol</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🧼</div>
+              <div class="feature-text"><strong>Segar</strong> &amp; Higienis</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">💸</div>
+              <div class="feature-text"><strong>Harga</strong> Terjangkau</div>
+            </div>
+          </div>
+
+          <div class="food-plate">
+            <div class="plate"></div>
+            <img
+              class="food-img"
+              src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80"
+              alt="Somay komplit"
+            />
+            <div class="plate-badge">
+              <h3>SOMAY KOMPLIT</h3>
+              <ul>
+                <li>Siomay lembut</li>
+                <li>Tahu &amp; kol rebus</li>
+                <li>Telur rebus</li>
+                <li>Kentang spesial</li>
+                <li>Saus kacang spesial</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
 </body>
 </html>
