@@ -1,1 +1,1 @@
-
+/* Public catalog defaults are in products.js. Keep this compatibility file for existing project links. */

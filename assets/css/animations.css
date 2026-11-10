@@ -1,1 +1,2 @@
-
+/* Optional motion layer. Honors reduced-motion preferences. */
+@media (prefers-reduced-motion:no-preference){.visual-ring.ring-a{animation:orbit 28s linear infinite}.visual-ring.ring-b{animation:orbit 42s linear infinite reverse}.status-dot{animation:pulse 2.4s ease-in-out infinite}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes pulse{50%{box-shadow:0 0 3px var(--mint),0 0 14px var(--mint)}}}
