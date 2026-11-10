@@ -1,1 +1,1 @@
-
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}@keyframes glow-pulse{0%,100%{box-shadow:0 0 16px rgba(103,231,247,.15)}50%{box-shadow:0 0 28px rgba(103,231,247,.3)}}.hero-image-frame{animation:glow-pulse 5s ease-in-out infinite}.reveal{animation:rise-in .75s both}@keyframes rise-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}

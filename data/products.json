@@ -1,1 +1,24 @@
-
+{
+  "products": [
+    {
+      "id": "SOM-0001",
+      "name": "Somay Komplit",
+      "category": "somay",
+      "description": "Somay lembut, tahu, kol, telur, kentang, dan saus kacang spesial.",
+      "price": 15000,
+      "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=900&q=85",
+      "stock": 20,
+      "active": true
+    },
+    {
+      "id": "TEH-0001",
+      "name": "Esteh Original Jumbo",
+      "category": "esteh",
+      "description": "Teh pilihan dengan rasa mantap dan kesegaran di setiap tegukan.",
+      "price": 10000,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=85",
+      "stock": 30,
+      "active": true
+    }
+  ]
+}

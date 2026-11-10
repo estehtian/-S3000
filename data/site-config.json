@@ -1,1 +1,18 @@
-
+{
+  "name": "S3000 — Somay & Esteh Tian",
+  "tagline": "Rasa lokal, energi baru.",
+  "locale": "id-ID",
+  "currency": "IDR",
+  "theme": {
+    "mode": "dark",
+    "background": "#07141b",
+    "accent": "#67e7f7",
+    "highlight": "#d8ff62"
+  },
+  "navigation": [
+    { "label": "Beranda", "href": "index.html" },
+    { "label": "Menu", "href": "pages/menu.html" },
+    { "label": "Cerita", "href": "pages/tentang.html" },
+    { "label": "Lokasi", "href": "pages/lokasi.html" }
+  ]
+}
