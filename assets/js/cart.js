@@ -1,1 +1,1 @@
-
+/* Cart and checkout interactions are delegated by app.js for every page. */
